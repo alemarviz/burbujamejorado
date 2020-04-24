@@ -16,7 +16,7 @@ public class BurbujaMejoradoConTestDeComprobación {
 		
 		// Algoritmo de ordenación (burbuja mejorado con test de comprobación)
 		
-		// tope controla el número de pasadas y el límite de la misma
+		// tope controla el número de pasadas y el límite de la misma (última posición a tratar)
 		for(int tope = datos.length-1; tope >= 1; tope--) 
 		{
 			// test de comprobación
