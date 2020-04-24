@@ -14,12 +14,14 @@ public class BurbujaMejoradoConTestDeComprobación {
 			datos[i] = rnd.nextInt(100)+1;
 		}
 		
-		// Algoritmo de ordenación
+		// Algoritmo de ordenación (burbuja mejorado con test de comprobación)
+		
 		// tope controla el número de pasadas y el límite de la misma
 		for(int tope = datos.length-1; tope >= 1; tope--) 
 		{
 			// test de comprobación
-			boolean sw = true; 
+			boolean sw = true; // Suponemos que el vector ya está ordenado 
+			
 			for(int i = 1; i <= tope ; i++) 
 			{
 				// Ordenación creciente
@@ -28,6 +30,8 @@ public class BurbujaMejoradoConTestDeComprobación {
 					int temp = datos[i-1];
 					datos[i-1] = datos[i];
 					datos[i] = temp;
+					
+					// No podemos asegurar la ordenación
 					sw = false;
 				}
 			} // fin del for interno
