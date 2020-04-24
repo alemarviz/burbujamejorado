@@ -14,7 +14,7 @@ public class BurbujaMejoradoConTestDeComprobación {
 			datos[i] = rnd.nextInt(100)+1;
 		}
 		
-		mostrarVector(datos);
+		mostrarVector("Vector", datos);
 		
 		// Algoritmo de ordenación (burbuja mejorado con test de comprobación)
 		
@@ -43,15 +43,15 @@ public class BurbujaMejoradoConTestDeComprobación {
 		}
 		// Fin del proceso. 
 		
-		mostrarVector(datos);
+		mostrarVector("Ordenado", datos);
 
 	}
 
-	private static void mostrarVector(int[] datos) {
+	private static void mostrarVector(String cabecera, int[] datos) {
 		// Mostramos el vector resultado ordenado
-		System.out.print("Vector: ");
+		System.out.printf("%-15s", cabecera);
 		for(int valor: datos)
-			System.out.print(valor+" ");
+			System.out.printf("%4d", valor);
 		System.out.println();
 	}
 
