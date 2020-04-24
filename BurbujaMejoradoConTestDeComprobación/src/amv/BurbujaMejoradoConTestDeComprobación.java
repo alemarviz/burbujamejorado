@@ -14,6 +14,8 @@ public class BurbujaMejoradoConTestDeComprobación {
 			datos[i] = rnd.nextInt(100)+1;
 		}
 		
+		mostrarVector(datos);
+		
 		// Algoritmo de ordenación (burbuja mejorado con test de comprobación)
 		
 		// tope controla el número de pasadas y el límite de la misma (última posición a tratar)
@@ -24,7 +26,7 @@ public class BurbujaMejoradoConTestDeComprobación {
 			
 			for(int i = 1; i <= tope ; i++) 
 			{
-				// Ordenación creciente
+				// Ordenación creciente > // Ordenación decreciente <
 				if (datos[i-1] > datos[i])
 				{
 					int temp = datos[i-1];
@@ -41,11 +43,16 @@ public class BurbujaMejoradoConTestDeComprobación {
 		}
 		// Fin del proceso. 
 		
+		mostrarVector(datos);
+
+	}
+
+	private static void mostrarVector(int[] datos) {
 		// Mostramos el vector resultado ordenado
 		System.out.print("Vector: ");
 		for(int valor: datos)
 			System.out.print(valor+" ");
-
+		System.out.println();
 	}
 
 }
